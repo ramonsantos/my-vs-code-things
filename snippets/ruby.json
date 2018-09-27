@@ -1,0 +1,8 @@
+{
+	// Debugging
+	"byebug": {
+		"prefix": "byebug",
+		"body": "\nbyebug\n",
+		"description": "Byebug line"
+	}
+}
