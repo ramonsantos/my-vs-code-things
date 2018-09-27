@@ -4,5 +4,32 @@
 		"prefix": "byebug",
 		"body": "\nbyebug\n",
 		"description": "Byebug line"
+	},
+
+	// rspec
+	"describe": {
+		"prefix": "describe",
+		"body": "describe '${1:a specification}' do\r\n\t$2\r\nend\r\n",
+		"description": "RSpec 'Describe' block"
+	},
+	"context": {
+		"prefix": "context",
+		"body": "context '${1:a context}' do\r\n\t$2\r\nend\r\n",
+		"description": "RSpec 'Context' block"
+	},
+	"it": {
+		"prefix": "it",
+		"body": "it '${1:a it}' do\r\n\t$2\r\nend\r\n",
+		"description": "RSpec 'It' block"
+	},
+	"let-inline": {
+		"prefix": "let",
+		"body": "let(:${1:var}) { $2 } ",
+		"description": "RSpec 'Let' inline"
+	},
+	"let-multilines": {
+		"prefix": "let",
+		"body": "let(:${1:var}) do\r\n\t$2\r\nend\r\n",
+		"description": "RSpec 'Let' multilines"
 	}
 }
