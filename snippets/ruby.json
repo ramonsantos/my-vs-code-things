@@ -1,4 +1,21 @@
 {
+	// Ruby on Rails
+	"before-action": {
+		"prefix": "before-action",
+		"body": "before_action :$1, only: [:$2]",
+		"description": "before-action line"
+	},
+	"resp_to-inline": {
+		"prefix": "respond_to",
+		"body": "respond_to do |format|\n\tformat.html { $1 }\n\n\tformat.json { $2 }\nend",
+		"description": "respond_to inline"
+	},
+	"resp_to-multilines": {
+		"prefix": "respond_to",
+		"body": "respond_to do |format|\n\tformat.html do\n\t\t$1\n\tend\n\n\tformat.json do\n\t\t$2\n\tend\nend",
+		"description": "respond_to multilines"
+	},
+
 	// Debugging
 	"byebug": {
 		"prefix": "byebug",
