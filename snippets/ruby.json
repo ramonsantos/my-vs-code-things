@@ -2,8 +2,13 @@
 	// Debugging
 	"byebug": {
 		"prefix": "byebug",
-		"body": "\nbyebug\n",
+		"body": "\r\nbyebug\r\n",
 		"description": "Byebug line"
+	},
+	"binding-pry": {
+		"prefix": "binding-pry",
+		"body": "\r\nbinding.pry\r\n",
+		"description": "Pry-byebug line"
 	},
 
 	// rspec
