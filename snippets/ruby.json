@@ -5,6 +5,16 @@
 		"body": "before_action :$1, only: [:$2]",
 		"description": "before-action line"
 	},
+	"render-json": {
+		"prefix": "render-json",
+		"body": "render json: { ${1:entity}: ${2:content} }, status: :${3:accepted}",
+		"description": "render-json line"
+	},
+	"render-nothing": {
+		"prefix": "render-nothing",
+		"body": "render nothing: true, status: :${1:unprocessable_entity}",
+		"description": "render nothing line"
+	},
 	"resp_to-inline": {
 		"prefix": "respond_to",
 		"body": "respond_to do |format|\n\tformat.html { $1 }\n\n\tformat.json { $2 }\nend",
