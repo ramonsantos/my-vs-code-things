@@ -29,6 +29,11 @@
 	},
 
 	// rspec
+	"before-block": {
+		"prefix": "before-block",
+		"body": "before do\n\t$1\nend\n",
+		"description": "RSpec 'before' block"
+	},
 	"describe": {
 		"prefix": "describe",
 		"body": "describe '${1:a specification}' do\r\n\t$2\r\nend\r\n",
@@ -41,7 +46,7 @@
 	},
 	"it": {
 		"prefix": "it",
-		"body": "it '${1:a it}' do\r\n\t$2\r\nend\r\n",
+		"body": "it '${1:should}' do\r\n\t$2\r\nend",
 		"description": "RSpec 'It' block"
 	},
 	"let-inline": {
