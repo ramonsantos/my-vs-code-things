@@ -6,6 +6,8 @@
 	"editor.rulers": [115],
 	"editor.snippetSuggestions": "top",
 	"editor.tabSize": 2,
+	"terminal.integrated.drawBoldTextInBrightColors": false,
+	"terminal.integrated.fontSize": 15,
 	"terminal.integrated.shell.linux": "bash",
 	"window.titleBarStyle": "custom",
 	"window.zoomLevel": 0,
