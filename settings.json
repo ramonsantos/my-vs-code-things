@@ -1,4 +1,5 @@
 {
+	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.fontSize": 16,
 	"editor.formatOnPaste": false,
 	"editor.multiCursorModifier": "ctrlCmd",
@@ -6,6 +7,12 @@
 	"editor.rulers": [115],
 	"editor.snippetSuggestions": "top",
 	"editor.tabSize": 2,
+	"gitlens.advanced.messages": {
+		"suppressResultsExplorerNotice": true,
+		"suppressShowKeyBindingsNotice": true
+	},
+	"gitlens.currentLine.enabled": false,
+	"gitlens.historyExplorer.enabled": true,
 	"terminal.integrated.cursorStyle": "underline",
 	"terminal.integrated.drawBoldTextInBrightColors": false,
 	"terminal.integrated.fontSize": 15,
@@ -13,7 +20,8 @@
 	"window.titleBarStyle": "custom",
 	"window.zoomLevel": 0,
 	"workbench.colorCustomizations": {
-		"editorIndentGuide.activeBackground": "#999"
+		"editorIndentGuide.activeBackground": "#999",
+		"editorRuler.foreground": "#F92672"
 	},
 	"workbench.colorTheme": "Monokai",
 	"workbench.iconTheme": "vscode-great-icons",
