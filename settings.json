@@ -7,12 +7,15 @@
 	"editor.rulers": [115],
 	"editor.snippetSuggestions": "top",
 	"editor.tabSize": 2,
+	"files.trimTrailingWhitespace": true,
 	"gitlens.advanced.messages": {
 		"suppressResultsExplorerNotice": true,
 		"suppressShowKeyBindingsNotice": true
 	},
 	"gitlens.currentLine.enabled": false,
 	"gitlens.historyExplorer.enabled": true,
+	"ruby.intellisense": "rubyLocate",
+	"ruby.rubocop.configFilePath": "/home/ramonnascimento/.rubocop.yml",
 	"terminal.integrated.cursorStyle": "underline",
 	"terminal.integrated.drawBoldTextInBrightColors": false,
 	"terminal.integrated.fontSize": 15,
