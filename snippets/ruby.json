@@ -42,6 +42,41 @@
 		"body": "respond_to do |format|\n\tformat.html do\n\t\t$1\n\tend\n\n\tformat.json do\n\t\t$2\n\tend\nend",
 		"description": "respond_to multilines"
 	},
+	"symbol-http-status-201": {
+		"prefix": "http-status-201",
+		"body": ":created",
+		"description": "201 HTTP status symbol"
+	},
+	"symbol-http-status-202": {
+		"prefix": "http-status-202",
+		"body": ":accepted",
+		"description": "202 HTTP status symbol"
+	},
+	"symbol-http-status-204": {
+		"prefix": "http-status-204",
+		"body": ":no_content",
+		"description": "204 HTTP status symbol"
+	},
+	"symbol-http-status-401": {
+		"prefix": "http-status-401",
+		"body": ":unauthorized",
+		"description": "401 HTTP status symbol"
+	},
+	"symbol-http-status-403": {
+		"prefix": "http-status-403",
+		"body": ":forbidden",
+		"description": "403 HTTP status symbol"
+	},
+	"symbol-http-status-404": {
+		"prefix": "http-status-404",
+		"body": ":not_found",
+		"description": "404 HTTP status symbol"
+	},
+	"symbol-http-status-422": {
+		"prefix": "http-status-422",
+		"body": ":unprocessable_entity",
+		"description": "422 HTTP status symbol"
+	},
 
 	// Debugging
 	"byebug": {
