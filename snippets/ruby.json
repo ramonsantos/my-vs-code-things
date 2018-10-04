@@ -1,4 +1,21 @@
 {
+	// Ruby
+	"array-tap-block": {
+		"prefix": "[].tap-block",
+		"body": "[].tap do |a|\n\t$2\nend",
+		"description": "tap method block for array"
+	},
+	"hash-tap-block": {
+		"prefix": "{}.tap-block",
+		"body": "{}.tap do |h|\n\t$2\nend",
+		"description": "tap method block for hash"
+	},
+	"tap-block": {
+		"prefix": ".tap-block",
+		"body": ".tap do |${1:obj}|\n\t$2\nend",
+		"description": "generic tap method block"
+	},
+	
 	// Ruby on Rails
 	"before-action": {
 		"prefix": "before-action",
