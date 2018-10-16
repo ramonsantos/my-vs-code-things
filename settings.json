@@ -16,6 +16,7 @@
 	"gitlens.historyExplorer.enabled": true,
 	"ruby.intellisense": "rubyLocate",
 	"ruby.rubocop.configFilePath": "/home/ramonnascimento/.rubocop.yml",
+	"terminal.integrated.copyOnSelection": true,
 	"terminal.integrated.cursorStyle": "underline",
 	"terminal.integrated.drawBoldTextInBrightColors": false,
 	"terminal.integrated.fontSize": 15,
