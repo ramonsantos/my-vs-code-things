@@ -42,6 +42,11 @@
 		"body": "respond_to do |format|\n\tformat.html do\n\t\t$1\n\tend\n\n\tformat.json do\n\t\t$2\n\tend\nend",
 		"description": "respond_to multilines"
 	},
+	"route-get": {
+		"prefix": "get",
+		"body": "get '/$1', action: '${2:action}', as: '${3:resource_path}'",
+		"description": "get route"
+	},
 	"symbol-http-status-201": {
 		"prefix": "http-status-201",
 		"body": ":created",
