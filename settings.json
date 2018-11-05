@@ -1,7 +1,18 @@
 {
+	"bracketPairColorizer.colorMode": "Consecutive",
+	"bracketPairColorizer.consecutivePairColors": [
+		"()",
+		"[]",
+		"{}",
+		[
+			"Gold"
+		],
+		"Gold"
+	],
 	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.fontSize": 16,
 	"editor.formatOnPaste": false,
+	"editor.minimap.enabled": true,
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.renderWhitespace": "all",
 	"editor.rulers": [115],
@@ -24,6 +35,7 @@
 	"window.titleBarStyle": "custom",
 	"window.zoomLevel": 0,
 	"workbench.colorCustomizations": {
+		"editorCursor.foreground": "#F92672",
 		"editorIndentGuide.activeBackground": "#999",
 		"editorRuler.foreground": "#F92672"
 	},
