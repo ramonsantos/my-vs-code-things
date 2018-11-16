@@ -15,7 +15,7 @@
 		"body": ".tap do |${1:obj}|\n\t$2\nend",
 		"description": "generic tap method block"
 	},
-	
+
 	// Ruby on Rails
 	"before-action": {
 		"prefix": "before-action",
@@ -101,6 +101,26 @@
 	},
 
 	// rspec
+	"be_empty-line": {
+		"prefix": "be_empty",
+		"body": "be_empty",
+		"description": "RSpec 'be_empty' matcher"
+	},
+	"be_falsey-line": {
+		"prefix": "be_falsey",
+		"body": "be_falsey",
+		"description": "RSpec 'be_falsey' matcher"
+	},
+	"be_nil-line": {
+		"prefix": "be_nil",
+		"body": "be_nil",
+		"description": "RSpec 'be_nil' matcher"
+	},
+	"be_truthy-line": {
+		"prefix": "be_truthy",
+		"body": "be_truthy",
+		"description": "RSpec 'be_truthy' matcher"
+	},
 	"before-block": {
 		"prefix": "before-block",
 		"body": "before do\n\t$1\nend\n",
