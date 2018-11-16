@@ -35,7 +35,7 @@
 	"window.titleBarStyle": "custom",
 	"window.zoomLevel": 0,
 	"workbench.colorCustomizations": {
-		"editorCursor.foreground": "#F92672",
+		"editorCursor.foreground": "#F5FFFA",
 		"editorIndentGuide.activeBackground": "#999",
 		"editorRuler.foreground": "#F92672"
 	},
