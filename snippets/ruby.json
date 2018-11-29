@@ -82,6 +82,16 @@
 		"body": ":not_found",
 		"description": "404 HTTP status symbol"
 	},
+	"symbol-http-status-406": {
+		"prefix": "http-status-406",
+		"body": ":not_acceptable",
+		"description": "406 HTTP status symbol"
+	},
+	"symbol-http-status-415": {
+		"prefix": "http-status-415",
+		"body": ":unsupported_media_type",
+		"description": "415 HTTP status symbol"
+	},
 	"symbol-http-status-422": {
 		"prefix": "http-status-422",
 		"body": ":unprocessable_entity",
