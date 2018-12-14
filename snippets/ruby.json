@@ -5,6 +5,11 @@
 		"body": "[].tap do |a|\n\t$2\nend",
 		"description": "tap method block for array"
 	},
+	"case-when": {
+		"prefix": "case-when",
+		"body": "case ${1:cond}\nwhen ${2:a}\n\t\t${3:body_a}\nwhen ${4:b}\n\t\t${5:body_b}\nelse\n\t\t${6:body_else}\nend",
+		"description": "case-when block"
+	},
 	"hash-tap-block": {
 		"prefix": "{}.tap-block",
 		"body": "{}.tap do |h|\n\t$2\nend",
