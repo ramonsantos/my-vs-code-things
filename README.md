@@ -1,5 +1,12 @@
 # Extensions
 
+## General
+
+### GitLens
+
+* Publisher: Eric Amodio
+* Repository: https://github.com/eamodio/vscode-gitlens
+
 ## Ruby
 
 ### Ruby
