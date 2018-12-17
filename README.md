@@ -23,3 +23,10 @@
 * Repository: https://github.com/misogi/vscode-ruby-rubocop
 * Dependencies:
   * ```rubocop``` Gem.
+
+# Elixir
+
+### vscode-elixir
+
+* Publisher: Mat McLoughlin
+* Repository: https://github.com/fr1zle/vscode-elixir
