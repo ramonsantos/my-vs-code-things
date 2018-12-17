@@ -24,7 +24,7 @@
 * Dependencies:
   * ```rubocop``` Gem.
 
-# Elixir
+## Elixir
 
 ### vscode-elixir
 
