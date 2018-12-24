@@ -2,8 +2,13 @@
 	// Ruby
 	"array-tap-block": {
 		"prefix": "[].tap-block",
-		"body": "[].tap do |a|\n\t$2\nend",
+		"body": "[].tap do |a|\n\t$1\nend",
 		"description": "tap method block for array"
+	},
+	"attr_reader-line": {
+		"prefix": "attr_reader",
+		"body": "attr_reader :${1:attr_name}",
+		"description": "attr_reader line"
 	},
 	"case-when": {
 		"prefix": "case-when",
@@ -12,8 +17,13 @@
 	},
 	"hash-tap-block": {
 		"prefix": "{}.tap-block",
-		"body": "{}.tap do |h|\n\t$2\nend",
+		"body": "{}.tap do |h|\n\t$1\nend",
 		"description": "tap method block for hash"
+	},
+	"initialize-method": {
+		"prefix": "initialize",
+		"body": "def initialize($1)\n\t$2\nend",
+		"description": "Initialize method"
 	},
 	"tap-block": {
 		"prefix": ".tap-block",
