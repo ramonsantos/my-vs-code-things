@@ -4,5 +4,10 @@
 		"prefix": "puts",
 		"body": "IO.puts \"$1\"",
 		"description": "puts line"
+	},
+	"pry": {
+		"prefix": "bin",
+		"body": "require IEx; IEx.pry",
+		"description": "pry line"
 	}
 }
