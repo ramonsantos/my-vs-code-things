@@ -1,0 +1,8 @@
+{
+	// Elixir
+	"puts": {
+		"prefix": "puts",
+		"body": "IO.puts \"$1\"",
+		"description": "puts line"
+	}
+}
