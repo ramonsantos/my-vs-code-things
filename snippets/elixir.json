@@ -9,5 +9,12 @@
 		"prefix": "bin",
 		"body": "require IEx; IEx.pry",
 		"description": "pry line"
+	},
+
+	// Test
+	"describe": {
+		"prefix": "describe",
+		"body": "describe \"${1:a specification}\" do\n\t$2\nend",
+		"description": "describe block"
 	}
 }
