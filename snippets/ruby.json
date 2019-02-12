@@ -114,15 +114,20 @@
 	},
 
 	// Debugging
+	"binding-pry": {
+		"prefix": "binding-pry",
+		"body": "\r\nbinding.pry\r\n",
+		"description": "Pry-byebug line"
+	},
 	"byebug": {
 		"prefix": "byebug",
 		"body": "\r\nbyebug\r\n",
 		"description": "Byebug line"
 	},
-	"binding-pry": {
-		"prefix": "binding-pry",
-		"body": "\r\nbinding.pry\r\n",
-		"description": "Pry-byebug line"
+	"debugger": {
+		"prefix": "debugger",
+		"body": "\r\ndebugger\r\n",
+		"description": "Debugger line"
 	},
 
 	// rspec
