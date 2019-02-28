@@ -171,6 +171,11 @@
 		"body": "before do\n\t$1\nend\n",
 		"description": "RSpec 'before' block"
 	},
+	"after-block": {
+		"prefix": "after-block",
+		"body": "after do\n\t$1\nend\n",
+		"description": "RSpec 'after' block"
+	},
 	"describe": {
 		"prefix": "describe",
 		"body": "describe '${1:a specification}' do\r\n\t$2\r\nend\r\n",
