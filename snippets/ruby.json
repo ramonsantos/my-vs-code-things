@@ -20,6 +20,11 @@
 		"body": ".each do |${1:obj}|\n\t$2\nend",
 		"description": "each method block"
 	},
+	"file-read-line": {
+		"prefix": "File.read",
+		"body": "File.read('$1')",
+		"description": "File.read line"
+	},
 	"hash-tap-block": {
 		"prefix": "{}.tap-block",
 		"body": "{}.tap do |h|\n\t$1\nend",
@@ -29,6 +34,11 @@
 		"prefix": "initialize",
 		"body": "def initialize($1)\n\t$2\nend",
 		"description": "Initialize method"
+	},
+	"json-parse-line": {
+		"prefix": "JSON.parse",
+		"body": "JSON.parse($1)",
+		"description": "JSON.parse line"
 	},
 	"tap-block": {
 		"prefix": ".tap-block",
