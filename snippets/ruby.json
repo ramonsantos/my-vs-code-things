@@ -40,6 +40,16 @@
 		"body": "JSON.parse($1)",
 		"description": "JSON.parse line"
 	},
+	"map-block": {
+		"prefix": ".map-block",
+		"body": ".map do |${1:obj}|\n\t$2\nend",
+		"description": "map method block"
+	},
+	"map-inline": {
+		"prefix": ".map-inline",
+		"body": ".map { |${1:obj}| $2 }",
+		"description": "map method inline"
+	},
 	"tap-block": {
 		"prefix": ".tap-block",
 		"body": ".tap do |${1:obj}|\n\t$2\nend",
