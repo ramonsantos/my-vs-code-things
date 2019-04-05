@@ -1,5 +1,10 @@
 {
 	// Elixir
+	"anonymous-functions": {
+		"prefix": "fn",
+		"body": "fn $1 -> $2 end",
+		"description": "anonymous functions"
+	},
 	"puts": {
 		"prefix": "puts",
 		"body": "IO.puts \"$1\"",
@@ -7,7 +12,7 @@
 	},
 	"pry": {
 		"prefix": "bin",
-		"body": "require IEx; IEx.pry",
+		"body": "\nrequire IEx; IEx.pry\n",
 		"description": "pry line"
 	},
 
