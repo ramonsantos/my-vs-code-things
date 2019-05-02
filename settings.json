@@ -5,17 +5,16 @@
 		"[]",
 		"{}",
 		[
-			"Gold"
+			"#F92672"
 		],
-		"Gold"
+		"Red"
 	],
-	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.fontSize": 16,
 	"editor.formatOnPaste": false,
 	"editor.minimap.enabled": true,
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.renderWhitespace": "all",
-	"editor.rulers": [115],
+	"editor.rulers": [80,115],
 	"editor.snippetSuggestions": "top",
 	"editor.tabSize": 2,
 	"files.trimTrailingWhitespace": true,
@@ -24,7 +23,6 @@
 		"suppressShowKeyBindingsNotice": true
 	},
 	"gitlens.currentLine.enabled": false,
-	"gitlens.historyExplorer.enabled": true,
 	"ruby.intellisense": "rubyLocate",
 	"ruby.rubocop.configFilePath": "/home/ramonnascimento/.rubocop.yml",
 	"terminal.integrated.copyOnSelection": true,
@@ -41,5 +39,17 @@
 	},
 	"workbench.colorTheme": "Monokai",
 	"workbench.iconTheme": "vscode-great-icons",
-	"workbench.startupEditor": "newUntitledFile"
+	"workbench.startupEditor": "newUntitledFile",
+	"gitlens.views.fileHistory.enabled": true,
+	"gitlens.views.lineHistory.enabled": true,
+	"coverage-gutters.showLineCoverage": true,
+	"explorer.confirmDelete": false,
+	"atlascode.jira.workingSite": {
+		"baseUrlSuffix": "atlassian.net"
+	},
+	"yaml.schemas": {
+		"file:///home/ramonnascimento/.vscode/extensions/atlassian.atlascode-1.2.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+	},
+	"atlascode.bitbucket.statusbar.enabled": false,
+	"atlascode.jira.statusbar.enabled": false
 }
