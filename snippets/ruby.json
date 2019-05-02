@@ -56,6 +56,33 @@
 		"description": "generic tap method block"
 	},
 
+	// Simple methods
+	"blank-method": {
+		"prefix": "blank?",
+		"body": "blank?",
+		"description": "blank? method"
+	},
+	"instance_of-method": {
+		"prefix": "instance_of?",
+		"body": "instance_of?($1)",
+		"description": "instance_of? method"
+	},
+	"kind_of-method": {
+		"prefix": "kind_of?",
+		"body": "kind_of?($1)",
+		"description": "kind_of? method"
+	},
+	"nil-method": {
+		"prefix": "nil?",
+		"body": "nil?",
+		"description": "nil? method"
+	},
+	"present-method": {
+		"prefix": "present?",
+		"body": "present?",
+		"description": "present? method"
+	},
+
 	// Ruby on Rails
 	"before-action": {
 		"prefix": "before-action",
@@ -193,13 +220,18 @@
 	},
 	"context": {
 		"prefix": "context",
-		"body": "context '${1:a context}' do\r\n\t$2\r\nend\r\n",
+		"body": "context 'when $1' do\r\n\t$2\r\nend\r\n",
 		"description": "RSpec 'Context' block"
 	},
 	"it": {
 		"prefix": "it",
 		"body": "it '${1:should}' do\r\n\t$2\r\nend",
-		"description": "RSpec 'It' block"
+		"description": "RSpec 'it' block"
+	},
+	"xit": {
+		"prefix": "xit",
+		"body": "xit '${1:should}' do\r\n\t$2\r\nend",
+		"description": "RSpec 'xit' block"
 	},
 	"let-inline": {
 		"prefix": "let",
