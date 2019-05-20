@@ -27,7 +27,7 @@
 	},
 	"hash-tap-block": {
 		"prefix": "{}.tap-block",
-		"body": "{}.tap do |h|\n\t$1\nend",
+		"body": "{}.tap do |hash|\n\t$1\nend",
 		"description": "tap method block for hash"
 	},
 	"initialize-method": {
@@ -52,7 +52,7 @@
 	},
 	"tap-block": {
 		"prefix": ".tap-block",
-		"body": ".tap do |${1:obj}|\n\t$2\nend",
+		"body": ".tap do |${1:hash}|\n\t$2\nend",
 		"description": "generic tap method block"
 	},
 
@@ -133,6 +133,11 @@
 		"prefix": "http-status-204",
 		"body": ":no_content",
 		"description": "204 HTTP status symbol"
+	},
+	"symbol-http-status-400": {
+		"prefix": "http-status-400",
+		"body": ":bad_request",
+		"description": "400 HTTP status symbol"
 	},
 	"symbol-http-status-401": {
 		"prefix": "http-status-401",
