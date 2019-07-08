@@ -233,10 +233,10 @@
 		"body": "it '${1:should}' do\r\n\t$2\r\nend",
 		"description": "RSpec 'it' block"
 	},
-	"xit": {
-		"prefix": "xit",
-		"body": "xit '${1:should}' do\r\n\t$2\r\nend",
-		"description": "RSpec 'xit' block"
+	"feature": {
+		"prefix": "feature",
+		"body": "feature '${1:feature}' do\r\n\t$2\r\nend",
+		"description": "RSpec 'feature' block"
 	},
 	"let-inline": {
 		"prefix": "let",
@@ -247,5 +247,15 @@
 		"prefix": "let",
 		"body": "let(:${1:var}) do\r\n\t$2\r\nend\r\n",
 		"description": "RSpec 'Let' multilines"
+	},
+	"scenario": {
+		"prefix": "scenario",
+		"body": "scenario '${1:scenario}' do\r\n\t$2\r\nend",
+		"description": "RSpec 'scenario' block"
+	},
+	"xit": {
+		"prefix": "xit",
+		"body": "xit '${1:should}' do\r\n\t$2\r\nend",
+		"description": "RSpec 'xit' block"
 	}
 }
