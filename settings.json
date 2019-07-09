@@ -9,6 +9,8 @@
 		],
 		"Red"
 	],
+	"coverage-gutters.coverageReportFileName": "info.lcov",
+	"coverage-gutters.showLineCoverage": true,
 	"editor.fontSize": 16,
 	"editor.formatOnPaste": false,
 	"editor.minimap.enabled": true,
@@ -17,21 +19,22 @@
 	"editor.rulers": [80,115],
 	"editor.snippetSuggestions": "top",
 	"editor.tabSize": 2,
+	"explorer.confirmDelete": false,
 	"files.trimTrailingWhitespace": true,
 	"gitlens.advanced.messages": {
 		"suppressResultsExplorerNotice": true,
 		"suppressShowKeyBindingsNotice": true
 	},
 	"gitlens.currentLine.enabled": false,
+	"gitlens.views.fileHistory.enabled": true,
+	"gitlens.views.lineHistory.enabled": true,
 	"ruby.intellisense": "rubyLocate",
 	"ruby.rubocop.configFilePath": "/home/ramonsantos/.rubocop.yml",
 	"terminal.integrated.copyOnSelection": true,
 	"terminal.integrated.cursorStyle": "underline",
 	"terminal.integrated.drawBoldTextInBrightColors": false,
-	"terminal.integrated.fontSize": 15,
 	"terminal.integrated.fontFamily": "Hack Nerd Font",
-
-
+	"terminal.integrated.fontSize": 15,
 	"terminal.integrated.shell.linux": "/bin/zsh",
 	"window.titleBarStyle": "custom",
 	"window.zoomLevel": 0,
@@ -42,9 +45,5 @@
 	},
 	"workbench.colorTheme": "Monokai",
 	"workbench.iconTheme": "vscode-great-icons",
-	"workbench.startupEditor": "newUntitledFile",
-	"gitlens.views.fileHistory.enabled": true,
-	"gitlens.views.lineHistory.enabled": true,
-	"coverage-gutters.showLineCoverage": true,
-	"explorer.confirmDelete": false
+	"workbench.startupEditor": "newUntitledFile"
 }
