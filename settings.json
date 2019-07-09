@@ -24,12 +24,15 @@
 	},
 	"gitlens.currentLine.enabled": false,
 	"ruby.intellisense": "rubyLocate",
-	"ruby.rubocop.configFilePath": "/home/ramonnascimento/.rubocop.yml",
+	"ruby.rubocop.configFilePath": "/home/ramonsantos/.rubocop.yml",
 	"terminal.integrated.copyOnSelection": true,
 	"terminal.integrated.cursorStyle": "underline",
 	"terminal.integrated.drawBoldTextInBrightColors": false,
 	"terminal.integrated.fontSize": 15,
-	"terminal.integrated.shell.linux": "bash",
+	"terminal.integrated.fontFamily": "Hack Nerd Font",
+
+
+	"terminal.integrated.shell.linux": "/bin/zsh",
 	"window.titleBarStyle": "custom",
 	"window.zoomLevel": 0,
 	"workbench.colorCustomizations": {
@@ -43,13 +46,5 @@
 	"gitlens.views.fileHistory.enabled": true,
 	"gitlens.views.lineHistory.enabled": true,
 	"coverage-gutters.showLineCoverage": true,
-	"explorer.confirmDelete": false,
-	"atlascode.jira.workingSite": {
-		"baseUrlSuffix": "atlassian.net"
-	},
-	"yaml.schemas": {
-		"file:///home/ramonnascimento/.vscode/extensions/atlassian.atlascode-1.2.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-	},
-	"atlascode.bitbucket.statusbar.enabled": false,
-	"atlascode.jira.statusbar.enabled": false
+	"explorer.confirmDelete": false
 }
