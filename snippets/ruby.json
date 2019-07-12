@@ -188,25 +188,35 @@
 	},
 
 	// rspec
-	"be_empty-line": {
+	"be_empty": {
 		"prefix": "be_empty",
 		"body": "be_empty",
 		"description": "RSpec 'be_empty' matcher"
 	},
-	"be_falsey-line": {
+	"be_falsey": {
 		"prefix": "be_falsey",
 		"body": "be_falsey",
 		"description": "RSpec 'be_falsey' matcher"
 	},
-	"be_nil-line": {
+	"be_nil": {
 		"prefix": "be_nil",
 		"body": "be_nil",
 		"description": "RSpec 'be_nil' matcher"
 	},
-	"be_truthy-line": {
+	"be_successful": {
+		"prefix": "be_successful",
+		"body": "be_successful",
+		"description": "RSpec 'be_successful' matcher"
+	},
+	"be_truthy": {
 		"prefix": "be_truthy",
 		"body": "be_truthy",
 		"description": "RSpec 'be_truthy' matcher"
+	},
+	"be_valid": {
+		"prefix": "be_valid",
+		"body": "be_valid",
+		"description": "RSpec 'be_valid' matcher"
 	},
 	"before-block": {
 		"prefix": "before-block",
@@ -228,6 +238,12 @@
 		"body": "context 'when $1' do\r\n\t$2\r\nend\r\n",
 		"description": "RSpec 'Context' block"
 	},
+	"have_http_status": {
+		"prefix": "have_http_status",
+		"body": "have_http_status(${1:200})",
+		"description": "RSpec 'have_http_status' matcher"
+	},
+
 	"it": {
 		"prefix": "it",
 		"body": "it '${1:should}' do\r\n\t$2\r\nend",
