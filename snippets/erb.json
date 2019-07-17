@@ -1,4 +1,5 @@
 {
+	// HTML
 	"div":{
 		"prefix":"div",
 		"body":[
@@ -8,4 +9,53 @@
 		],
 		"description":"div tag"
 	},
+	"h1":{
+		"prefix":"h1",
+		"body":[
+			"<h1>$1</h1>"
+		],
+		"description":"h1 tag"
+	},
+	"h2":{
+		"prefix":"h2",
+		"body":[
+			"<h2>$1</h2>"
+		],
+		"description":"h2 tag"
+	},
+	"li":{
+		"prefix":"li",
+		"body":[
+			"<li>$1</li>"
+		],
+		"description":"li tag"
+	},
+	"section":{
+		"prefix":"section",
+		"body":[
+			"<section$1>",
+			"\t$2",
+			"</section>"
+		],
+		"description":"section tag"
+	},
+	"ul":{
+		"prefix":"ul",
+		"body":[
+			"<ul>",
+			"\t<li>$1</li>",
+			"\t<li>$2</li>",
+			"\t<li>$3</li>",
+			"</ul>"
+		],
+		"description":"ul tag"
+	},
+
+	//ERB
+	"link_to":{
+		"prefix":"link_to",
+		"body":"<%= link_to('${1:content}', ${2:a root_path}, class: '${3s:class}') %>",
+		"description":"link_to method"
+	}
 }
+
