@@ -11,15 +11,21 @@
 	],
 	"coverage-gutters.coverageReportFileName": "info.lcov",
 	"coverage-gutters.showLineCoverage": true,
+	"editor.detectIndentation": false,
 	"editor.fontSize": 16,
 	"editor.formatOnPaste": false,
+	"editor.formatOnSave": false,
 	"editor.minimap.enabled": true,
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.renderWhitespace": "all",
-	"editor.rulers": [80,115],
+	"editor.rulers": [
+		80,
+		115
+	],
 	"editor.snippetSuggestions": "top",
 	"editor.tabSize": 2,
 	"explorer.confirmDelete": false,
+	"files.insertFinalNewline": true,
 	"files.trimTrailingWhitespace": true,
 	"gitlens.advanced.messages": {
 		"suppressResultsExplorerNotice": true,
@@ -45,5 +51,16 @@
 	},
 	"workbench.colorTheme": "Monokai",
 	"workbench.iconTheme": "vscode-great-icons",
-	"workbench.startupEditor": "newUntitledFile"
+	"workbench.startupEditor": "newUntitledFile",	
+	"[python]": {
+		"editor.formatOnSave": true,
+		"editor.tabSize": 4,
+	},
+	"[json]": {
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4,
+		"files.insertFinalNewline": false,
+	}
 }
+
+
