@@ -23,6 +23,13 @@
 		],
 		"description":"h2 tag"
 	},
+	"h3":{
+		"prefix":"h3",
+		"body":[
+			"<h3>$1</h3>"
+		],
+		"description":"h3 tag"
+	},
 	"li":{
 		"prefix":"li",
 		"body":[
@@ -52,10 +59,16 @@
 	},
 
 	//ERB
+
 	"link_to":{
 		"prefix":"link_to",
 		"body":"<%= link_to('${1:content}', ${2:a root_path}, class: '${3s:class}') %>",
 		"description":"link_to method"
+	},
+	"ruby_block":{
+		"prefix":"ruby",
+		"body":"<%$1 $2 %>",
+		"description":"ruby block"
 	}
 }
 
