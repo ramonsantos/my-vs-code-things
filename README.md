@@ -4,31 +4,29 @@
 
 ## General
 
-### GitLens
-
-* Publisher: Eric Amodio
-* Repository: https://github.com/eamodio/vscode-gitlens
+* formulahendry.auto-close-tag
+* formulahendry.auto-close-tag
+* coenraads.bracket-pair-colorizer
+* ryanluker.vscode-coverage-gutters
+* editorconfig.editorconfig
+* eamodio.gitlens
+* monokai.theme-monokai-pro-vscode
+* ms-vscode.sublime-keybindings
+* emmanuelbeziat.vscode-great-icons
 
 ## Ruby
 
-### Ruby 
-
-* Publisher: Peng Lv
-* Repository: https://github.com/rubyide/vscode-ruby
-* Dependencies:
-  * ```ruby-debug-ide``` Gem;
-  * ```debase``` or ```byebug``` Gem.
-  
-### ruby-rubocop
-
-* Publisher: misogi
-* Repository: https://github.com/misogi/vscode-ruby-rubocop
-* Dependencies:
-  * ```rubocop``` Gem.
+* rebornix.ruby
+* misogi.ruby-rubocop
 
 ## Elixir
 
-### vscode-elixir
+* jakebecker.elixir-ls
 
-* Publisher: Mat McLoughlin
-* Repository: https://github.com/fr1zle/vscode-elixir
+## Crystal Lang
+
+* faustinoaq.crystal-lang
+
+## Python
+
+* ms-python.python
