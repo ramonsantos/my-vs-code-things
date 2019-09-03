@@ -30,12 +30,49 @@
 		],
 		"description":"h3 tag"
 	},
+	"h4":{
+		"prefix":"h4",
+		"body":[
+			"<h4>$1</h4>"
+		],
+		"description":"h4 tag"
+	},
+	"h5":{
+		"prefix":"h5",
+		"body":[
+			"<h5>$1</h5>"
+		],
+		"description":"h5 tag"
+	},
+	"h6":{
+		"prefix":"h6",
+		"body":[
+			"<h6>$1</h6>"
+		],
+		"description":"h6 tag"
+	},
 	"li":{
 		"prefix":"li",
 		"body":[
 			"<li>$1</li>"
 		],
 		"description":"li tag"
+	},
+	"nav":{
+		"prefix":"nav",
+		"body":[
+			"<nav$1>",
+			"\t$2",
+			"</nav>"
+		],
+		"description":"nav tag"
+	},
+	"p":{
+		"prefix":"p",
+		"body":[
+			"<p>$1</p>"
+		],
+		"description":"p tag"
 	},
 	"section":{
 		"prefix":"section",
@@ -62,13 +99,17 @@
 
 	"link_to":{
 		"prefix":"link_to",
-		"body":"<%= link_to('${1:content}', ${2:a root_path}, class: '${3s:class}') %>",
+		"body":"<%= link_to('${1:content}', ${2:root_path}, class: '${3s:class}') %>",
 		"description":"link_to method"
 	},
 	"ruby_block":{
 		"prefix":"ruby",
 		"body":"<%$1 $2 %>",
 		"description":"ruby block"
+	},
+	"ruby_end":{
+		"prefix":"end",
+		"body":"<% end %>",
+		"description":"ruby end block"
 	}
 }
-
