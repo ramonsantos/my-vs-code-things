@@ -6,6 +6,7 @@
 
 * formulahendry.auto-close-tag
 * formulahendry.auto-close-tag
+* alefragnani.bookmarks
 * coenraads.bracket-pair-colorizer
 * ryanluker.vscode-coverage-gutters
 * editorconfig.editorconfig
