@@ -223,6 +223,11 @@
 		"body": "before do\n\t$1\nend\n",
 		"description": "RSpec 'before' block"
 	},
+	"before-inline": {
+		"prefix": "before-inline",
+		"body": "before { $1 }",
+		"description": "RSpec 'before' inline"
+	},
 	"after-block": {
 		"prefix": "after-block",
 		"body": "after do\n\t$1\nend\n",
