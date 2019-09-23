@@ -32,6 +32,7 @@
 		"suppressShowKeyBindingsNotice": true
 	},
 	"gitlens.currentLine.enabled": false,
+	"gitlens.hovers.currentLine.over": "annotation",
 	"gitlens.views.fileHistory.enabled": true,
 	"gitlens.views.lineHistory.enabled": true,
 	"ruby.intellisense": "rubyLocate",
@@ -51,7 +52,7 @@
 	},
 	"workbench.colorTheme": "Monokai",
 	"workbench.iconTheme": "vscode-great-icons",
-	"workbench.startupEditor": "newUntitledFile",	
+	"workbench.startupEditor": "newUntitledFile",
 	"[python]": {
 		"editor.formatOnSave": true,
 		"editor.tabSize": 4,
@@ -60,7 +61,5 @@
 		"editor.insertSpaces": false,
 		"editor.tabSize": 4,
 		"files.insertFinalNewline": false,
-	}
+  }
 }
-
-
