@@ -1,282 +1,287 @@
 {
-	// Ruby
-	"array-tap-block": {
-		"prefix": "[].tap-block",
-		"body": "[].tap do |a|\n\t$1\nend",
-		"description": "tap method block for array"
-	},
-	"attr_reader-line": {
-		"prefix": "attr_reader",
-		"body": "attr_reader :${1:attr_name}",
-		"description": "attr_reader line"
-	},
-	"case-when": {
-		"prefix": "case-when",
-		"body": "case ${1:cond}\nwhen ${2:a}\n\t\t${3:body_a}\nwhen ${4:b}\n\t\t${5:body_b}\nelse\n\t\t${6:body_else}\nend",
-		"description": "case-when block"
-	},
-	"each-block": {
-		"prefix": ".each-block",
-		"body": ".each do |${1:obj}|\n\t$2\nend",
-		"description": "each method block"
-	},
-	"file-read-line": {
-		"prefix": "File.read",
-		"body": "File.read('$1')",
-		"description": "File.read line"
-	},
-	"hash-tap-block": {
-		"prefix": "{}.tap-block",
-		"body": "{}.tap do |hash|\n\t$1\nend",
-		"description": "tap method block for hash"
-	},
-	"initialize-method": {
-		"prefix": "initialize",
-		"body": "def initialize($1)\n\t$2\nend",
-		"description": "Initialize method"
-	},
-	"json-parse-line": {
-		"prefix": "JSON.parse",
-		"body": "JSON.parse($1)",
-		"description": "JSON.parse line"
-	},
-	"map-block": {
-		"prefix": ".map-block",
-		"body": ".map do |${1:obj}|\n\t$2\nend",
-		"description": "map method block"
-	},
-	"map-inline": {
-		"prefix": ".map-inline",
-		"body": ".map { |${1:obj}| $2 }",
-		"description": "map method inline"
-	},
-	"tap-block": {
-		"prefix": ".tap-block",
-		"body": ".tap do |${1:hash}|\n\t$2\nend",
-		"description": "generic tap method block"
-	},
+  // Ruby
+  "array-tap-block": {
+    "prefix": "[].tap-block",
+    "body": "[].tap do |a|\n\t$1\nend",
+    "description": "tap method block for array"
+  },
+  "attr_reader-line": {
+    "prefix": "attr_reader",
+    "body": "attr_reader :${1:attr_name}",
+    "description": "attr_reader line"
+  },
+  "case-when": {
+    "prefix": "case-when",
+    "body": "case ${1:cond}\nwhen ${2:a}\n\t\t${3:body_a}\nwhen ${4:b}\n\t\t${5:body_b}\nelse\n\t\t${6:body_else}\nend",
+    "description": "case-when block"
+  },
+  "each-block": {
+    "prefix": ".each-block",
+    "body": ".each do |${1:obj}|\n\t$2\nend",
+    "description": "each method block"
+  },
+  "file-read-line": {
+    "prefix": "File.read",
+    "body": "File.read('$1')",
+    "description": "File.read line"
+  },
+  "hash-tap-block": {
+    "prefix": "{}.tap-block",
+    "body": "{}.tap do |hash|\n\t$1\nend",
+    "description": "tap method block for hash"
+  },
+  "initialize-method": {
+    "prefix": "initialize",
+    "body": "def initialize($1)\n\t$2\nend",
+    "description": "Initialize method"
+  },
+  "json-parse-line": {
+    "prefix": "JSON.parse",
+    "body": "JSON.parse($1)",
+    "description": "JSON.parse line"
+  },
+  "map-block": {
+    "prefix": ".map-block",
+    "body": ".map do |${1:obj}|\n\t$2\nend",
+    "description": "map method block"
+  },
+  "map-inline": {
+    "prefix": ".map-inline",
+    "body": ".map { |${1:obj}| $2 }",
+    "description": "map method inline"
+  },
+  "tap-block": {
+    "prefix": ".tap-block",
+    "body": ".tap do |${1:hash}|\n\t$2\nend",
+    "description": "generic tap method block"
+  },
 
-	// Simple methods
-	"blank-method": {
-		"prefix": "blank?",
-		"body": "blank?",
-		"description": "blank? method"
-	},
-	"instance_of-method": {
-		"prefix": "instance_of?",
-		"body": "instance_of?($1)",
-		"description": "instance_of? method"
-	},
-	"kind_of-method": {
-		"prefix": "kind_of?",
-		"body": "kind_of?($1)",
-		"description": "kind_of? method"
-	},
-	"nil-method": {
-		"prefix": "nil?",
-		"body": "nil?",
-		"description": "nil? method"
-	},
-	"present-method": {
-		"prefix": "present?",
-		"body": "present?",
-		"description": "present? method"
-	},
+  // Simple methods
+  "blank-method": {
+    "prefix": "blank?",
+    "body": "blank?",
+    "description": "blank? method"
+  },
+  "freeze-method": {
+    "prefix": "freeze",
+    "body": "freeze",
+    "description": "freeze method"
+  },
+  "instance_of-method": {
+    "prefix": "instance_of?",
+    "body": "instance_of?($1)",
+    "description": "instance_of? method"
+  },
+  "kind_of-method": {
+    "prefix": "kind_of?",
+    "body": "kind_of?($1)",
+    "description": "kind_of? method"
+  },
+  "nil-method": {
+    "prefix": "nil?",
+    "body": "nil?",
+    "description": "nil? method"
+  },
+  "present-method": {
+    "prefix": "present?",
+    "body": "present?",
+    "description": "present? method"
+  },
 
-	// Ruby on Rails
-	"before-action": {
-		"prefix": "before-action",
-		"body": "before_action :$1, only: [:$2]",
-		"description": "before-action line"
-	},
-	"expect": {
-		"prefix": "expect",
-		"body": "expect($1).to eq($2)",
-		"description": "expect line"
-	},
-	"render-json": {
-		"prefix": "render-json",
-		"body": "render json: { ${1:entity}: ${2:content} }, status: :${3:accepted}",
-		"description": "render-json line"
-	},
-	"render-nothing": {
-		"prefix": "render-nothing",
-		"body": "render nothing: true, status: :${1:unprocessable_entity}",
-		"description": "render nothing line"
-	},
-	"resp_to-inline": {
-		"prefix": "respond_to",
-		"body": "respond_to do |format|\n\tformat.html { $1 }\n\n\tformat.json { $2 }\nend",
-		"description": "respond_to inline"
-	},
-	"resp_to-multilines": {
-		"prefix": "respond_to",
-		"body": "respond_to do |format|\n\tformat.html do\n\t\t$1\n\tend\n\n\tformat.json do\n\t\t$2\n\tend\nend",
-		"description": "respond_to multilines"
-	},
-	"route-get": {
-		"prefix": "get",
-		"body": "get '/$1', action: '${2:action}', as: '${3:resource_path}'",
-		"description": "get route"
-	},
-	"symbol-http-status-201": {
-		"prefix": "http-status-201",
-		"body": ":created",
-		"description": "201 HTTP status symbol"
-	},
-	"symbol-http-status-202": {
-		"prefix": "http-status-202",
-		"body": ":accepted",
-		"description": "202 HTTP status symbol"
-	},
-	"symbol-http-status-204": {
-		"prefix": "http-status-204",
-		"body": ":no_content",
-		"description": "204 HTTP status symbol"
-	},
-	"symbol-http-status-400": {
-		"prefix": "http-status-400",
-		"body": ":bad_request",
-		"description": "400 HTTP status symbol"
-	},
-	"symbol-http-status-401": {
-		"prefix": "http-status-401",
-		"body": ":unauthorized",
-		"description": "401 HTTP status symbol"
-	},
-	"symbol-http-status-403": {
-		"prefix": "http-status-403",
-		"body": ":forbidden",
-		"description": "403 HTTP status symbol"
-	},
-	"symbol-http-status-404": {
-		"prefix": "http-status-404",
-		"body": ":not_found",
-		"description": "404 HTTP status symbol"
-	},
-	"symbol-http-status-406": {
-		"prefix": "http-status-406",
-		"body": ":not_acceptable",
-		"description": "406 HTTP status symbol"
-	},
-	"symbol-http-status-415": {
-		"prefix": "http-status-415",
-		"body": ":unsupported_media_type",
-		"description": "415 HTTP status symbol"
-	},
-	"symbol-http-status-422": {
-		"prefix": "http-status-422",
-		"body": ":unprocessable_entity",
-		"description": "422 HTTP status symbol"
-	},
+  // Ruby on Rails
+  "before-action": {
+    "prefix": "before-action",
+    "body": "before_action :$1, only: [:$2]",
+    "description": "before-action line"
+  },
+  "expect": {
+    "prefix": "expect",
+    "body": "expect($1).to eq($2)",
+    "description": "expect line"
+  },
+  "render-json": {
+    "prefix": "render-json",
+    "body": "render json: { ${1:entity}: ${2:content} }, status: :${3:accepted}",
+    "description": "render-json line"
+  },
+  "render-nothing": {
+    "prefix": "render-nothing",
+    "body": "render nothing: true, status: :${1:unprocessable_entity}",
+    "description": "render nothing line"
+  },
+  "resp_to-inline": {
+    "prefix": "respond_to",
+    "body": "respond_to do |format|\n\tformat.html { $1 }\n\n\tformat.json { $2 }\nend",
+    "description": "respond_to inline"
+  },
+  "resp_to-multilines": {
+    "prefix": "respond_to",
+    "body": "respond_to do |format|\n\tformat.html do\n\t\t$1\n\tend\n\n\tformat.json do\n\t\t$2\n\tend\nend",
+    "description": "respond_to multilines"
+  },
+  "route-get": {
+    "prefix": "get",
+    "body": "get '/$1', action: '${2:action}', as: '${3:resource_path}'",
+    "description": "get route"
+  },
+  "symbol-http-status-201": {
+    "prefix": "http-status-201",
+    "body": ":created",
+    "description": "201 HTTP status symbol"
+  },
+  "symbol-http-status-202": {
+    "prefix": "http-status-202",
+    "body": ":accepted",
+    "description": "202 HTTP status symbol"
+  },
+  "symbol-http-status-204": {
+    "prefix": "http-status-204",
+    "body": ":no_content",
+    "description": "204 HTTP status symbol"
+  },
+  "symbol-http-status-400": {
+    "prefix": "http-status-400",
+    "body": ":bad_request",
+    "description": "400 HTTP status symbol"
+  },
+  "symbol-http-status-401": {
+    "prefix": "http-status-401",
+    "body": ":unauthorized",
+    "description": "401 HTTP status symbol"
+  },
+  "symbol-http-status-403": {
+    "prefix": "http-status-403",
+    "body": ":forbidden",
+    "description": "403 HTTP status symbol"
+  },
+  "symbol-http-status-404": {
+    "prefix": "http-status-404",
+    "body": ":not_found",
+    "description": "404 HTTP status symbol"
+  },
+  "symbol-http-status-406": {
+    "prefix": "http-status-406",
+    "body": ":not_acceptable",
+    "description": "406 HTTP status symbol"
+  },
+  "symbol-http-status-415": {
+    "prefix": "http-status-415",
+    "body": ":unsupported_media_type",
+    "description": "415 HTTP status symbol"
+  },
+  "symbol-http-status-422": {
+    "prefix": "http-status-422",
+    "body": ":unprocessable_entity",
+    "description": "422 HTTP status symbol"
+  },
 
-	// Debugging
-	"binding-pry": {
-		"prefix": "binding-pry",
-		"body": "\r\nbinding.pry\r\n",
-		"description": "Pry-byebug line"
-	},
-	"byebug": {
-		"prefix": "byebug",
-		"body": "\r\nbyebug\r\n",
-		"description": "Byebug line"
-	},
-	"debugger": {
-		"prefix": "debugger",
-		"body": "\r\ndebugger\r\n",
-		"description": "Debugger line"
-	},
+  // Debugging
+  "binding-pry": {
+    "prefix": "binding-pry",
+    "body": "\r\nbinding.pry\r\n",
+    "description": "Pry-byebug line"
+  },
+  "byebug": {
+    "prefix": "byebug",
+    "body": "\r\nbyebug\r\n",
+    "description": "Byebug line"
+  },
+  "debugger": {
+    "prefix": "debugger",
+    "body": "\r\ndebugger\r\n",
+    "description": "Debugger line"
+  },
 
-	// rspec
-	"be_empty": {
-		"prefix": "be_empty",
-		"body": "be_empty",
-		"description": "RSpec 'be_empty' matcher"
-	},
-	"be_falsey": {
-		"prefix": "be_falsey",
-		"body": "be_falsey",
-		"description": "RSpec 'be_falsey' matcher"
-	},
-	"be_nil": {
-		"prefix": "be_nil",
-		"body": "be_nil",
-		"description": "RSpec 'be_nil' matcher"
-	},
-	"be_successful": {
-		"prefix": "be_successful",
-		"body": "be_successful",
-		"description": "RSpec 'be_successful' matcher"
-	},
-	"be_truthy": {
-		"prefix": "be_truthy",
-		"body": "be_truthy",
-		"description": "RSpec 'be_truthy' matcher"
-	},
-	"be_valid": {
-		"prefix": "be_valid",
-		"body": "be_valid",
-		"description": "RSpec 'be_valid' matcher"
-	},
-	"before-block": {
-		"prefix": "before-block",
-		"body": "before do\n\t$1\nend\n",
-		"description": "RSpec 'before' block"
-	},
-	"before-inline": {
-		"prefix": "before-inline",
-		"body": "before { $1 }",
-		"description": "RSpec 'before' inline"
-	},
-	"after-block": {
-		"prefix": "after-block",
-		"body": "after do\n\t$1\nend\n",
-		"description": "RSpec 'after' block"
-	},
-	"describe": {
-		"prefix": "describe",
-		"body": "describe '${1:a specification}' do\r\n\t$2\r\nend\r\n",
-		"description": "RSpec 'Describe' block"
-	},
-	"context": {
-		"prefix": "context",
-		"body": "context 'when $1' do\r\n\t$2\r\nend\r\n",
-		"description": "RSpec 'Context' block"
-	},
-	"have_http_status": {
-		"prefix": "have_http_status",
-		"body": "have_http_status(${1:200})",
-		"description": "RSpec 'have_http_status' matcher"
-	},
+  // rspec
+  "be_empty": {
+    "prefix": "be_empty",
+    "body": "be_empty",
+    "description": "RSpec 'be_empty' matcher"
+  },
+  "be_falsey": {
+    "prefix": "be_falsey",
+    "body": "be_falsey",
+    "description": "RSpec 'be_falsey' matcher"
+  },
+  "be_nil": {
+    "prefix": "be_nil",
+    "body": "be_nil",
+    "description": "RSpec 'be_nil' matcher"
+  },
+  "be_successful": {
+    "prefix": "be_successful",
+    "body": "be_successful",
+    "description": "RSpec 'be_successful' matcher"
+  },
+  "be_truthy": {
+    "prefix": "be_truthy",
+    "body": "be_truthy",
+    "description": "RSpec 'be_truthy' matcher"
+  },
+  "be_valid": {
+    "prefix": "be_valid",
+    "body": "be_valid",
+    "description": "RSpec 'be_valid' matcher"
+  },
+  "before-block": {
+    "prefix": "before-block",
+    "body": "before do\n\t$1\nend\n",
+    "description": "RSpec 'before' block"
+  },
+  "before-inline": {
+    "prefix": "before-inline",
+    "body": "before { $1 }",
+    "description": "RSpec 'before' inline"
+  },
+  "after-block": {
+    "prefix": "after-block",
+    "body": "after do\n\t$1\nend\n",
+    "description": "RSpec 'after' block"
+  },
+  "describe": {
+    "prefix": "describe",
+    "body": "describe '${1:a specification}' do\r\n\t$2\r\nend\r\n",
+    "description": "RSpec 'Describe' block"
+  },
+  "context": {
+    "prefix": "context",
+    "body": "context 'when $1' do\r\n\t$2\r\nend\r\n",
+    "description": "RSpec 'Context' block"
+  },
+  "have_http_status": {
+    "prefix": "have_http_status",
+    "body": "have_http_status(${1:200})",
+    "description": "RSpec 'have_http_status' matcher"
+  },
 
-	"it": {
-		"prefix": "it",
-		"body": "it '${1:should}' do\r\n\t$2\r\nend",
-		"description": "RSpec 'it' block"
-	},
-	"feature": {
-		"prefix": "feature",
-		"body": "feature '${1:feature}' do\r\n\t$2\r\nend",
-		"description": "RSpec 'feature' block"
-	},
-	"let-inline": {
-		"prefix": "let",
-		"body": "let(:${1:var}) { $2 } ",
-		"description": "RSpec 'Let' inline"
-	},
-	"let-multilines": {
-		"prefix": "let",
-		"body": "let(:${1:var}) do\r\n\t$2\r\nend\r\n",
-		"description": "RSpec 'Let' multilines"
-	},
-	"scenario": {
-		"prefix": "scenario",
-		"body": "scenario '${1:scenario}' do\r\n\t$2\r\nend",
-		"description": "RSpec 'scenario' block"
-	},
-	"xit": {
-		"prefix": "xit",
-		"body": "xit '${1:should}' do\r\n\t$2\r\nend",
-		"description": "RSpec 'xit' block"
-	}
+  "it": {
+    "prefix": "it",
+    "body": "it '${1:should}' do\r\n\t$2\r\nend",
+    "description": "RSpec 'it' block"
+  },
+  "feature": {
+    "prefix": "feature",
+    "body": "feature '${1:feature}' do\r\n\t$2\r\nend",
+    "description": "RSpec 'feature' block"
+  },
+  "let-inline": {
+    "prefix": "let",
+    "body": "let(:${1:var}) { $2 } ",
+    "description": "RSpec 'Let' inline"
+  },
+  "let-multilines": {
+    "prefix": "let",
+    "body": "let(:${1:var}) do\r\n\t$2\r\nend\r\n",
+    "description": "RSpec 'Let' multilines"
+  },
+  "scenario": {
+    "prefix": "scenario",
+    "body": "scenario '${1:scenario}' do\r\n\t$2\r\nend",
+    "description": "RSpec 'scenario' block"
+  },
+  "xit": {
+    "prefix": "xit",
+    "body": "xit '${1:should}' do\r\n\t$2\r\nend",
+    "description": "RSpec 'xit' block"
+  }
 }
