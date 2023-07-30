@@ -1,6 +1,20 @@
 [
-    {
-        "key": "ctrl+'",
-        "command": "workbench.action.terminal.toggleTerminal"
-    }
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "f11",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+o ctrl+k",
+    "command": "workbench.action.files.openFile",
+    "when": "true"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "-workbench.action.files.openFile",
+    "when": "true"
+  }
 ]
