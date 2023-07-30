@@ -5,10 +5,20 @@
     "body": "[].tap do |a|\n\t$1\nend",
     "description": "tap method block for array"
   },
+  "attr_accessor-line": {
+    "prefix": "attr_accessor",
+    "body": "attr_accessor :${1:attr_name}",
+    "description": "attr_accessor line"
+  },
   "attr_reader-line": {
     "prefix": "attr_reader",
     "body": "attr_reader :${1:attr_name}",
     "description": "attr_reader line"
+  },
+  "attr_writer-line": {
+    "prefix": "attr_writer",
+    "body": "attr_writer :${1:attr_name}",
+    "description": "attr_writer line"
   },
   "case-when": {
     "prefix": "case-when",
@@ -24,6 +34,11 @@
     "prefix": "File.read",
     "body": "File.read('$1')",
     "description": "File.read line"
+  },
+  "frozen_string_literal": {
+    "prefix": "frozen_string_literal",
+    "body": "# frozen_string_literal: true\n",
+    "description": "frozen_string_literal comment"
   },
   "hash-tap-block": {
     "prefix": "{}.tap-block",
@@ -49,6 +64,11 @@
     "prefix": ".map-inline",
     "body": ".map { |${1:obj}| $2 }",
     "description": "map method inline"
+  },
+  "rescue-standard-error": {
+    "prefix": "rescue",
+    "body": "rescue StandardError => e",
+    "description": "rescue StandardError"
   },
   "tap-block": {
     "prefix": ".tap-block",
@@ -192,7 +212,7 @@
     "description": "Debugger line"
   },
 
-  // rspec
+  // RSpec
   "be_empty": {
     "prefix": "be_empty",
     "body": "be_empty",
@@ -238,10 +258,20 @@
     "body": "after do\n\t$1\nend\n",
     "description": "RSpec 'after' block"
   },
+  "after-inline": {
+    "prefix": "after-inline",
+    "body": "after { $1 }\n",
+    "description": "RSpec 'after' inline"
+  },
   "describe": {
     "prefix": "describe",
-    "body": "describe '${1:a specification}' do\r\n\t$2\r\nend\r\n",
+    "body": "describe '${1:}' do\r\n\t$2\r\nend\r\n",
     "description": "RSpec 'Describe' block"
+  },
+  "described_class": {
+    "prefix": "described_class",
+    "body": "described_class",
+    "description": "described_class"
   },
   "context": {
     "prefix": "context",
@@ -253,10 +283,9 @@
     "body": "have_http_status(${1:200})",
     "description": "RSpec 'have_http_status' matcher"
   },
-
   "it": {
     "prefix": "it",
-    "body": "it '${1:should}' do\r\n\t$2\r\nend",
+    "body": "it do\r\n\t$1\r\nend",
     "description": "RSpec 'it' block"
   },
   "feature": {
