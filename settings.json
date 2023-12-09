@@ -26,14 +26,8 @@
   "redhat.telemetry.enabled": false,
   "ruby.intellisense": "rubyLocate",
   "ruby.useBundler": false,
-  "search.exclude": {
 
-
-    // "**/app/docs": true
-  },
   "security.workspace.trust.untrustedFiles": "open",
-  "sync.gist": "e41f3190096f43f5f26093b3be35654a",
-  // "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorStyle": "underline",
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontFamily": "Hack Nerd Font",
@@ -50,7 +44,6 @@
   "workbench.editor.decorations.colors": false,
   "workbench.iconTheme": "vscode-great-icons",
   "workbench.startupEditor": "none",
-
   "[csv]": {
     "files.insertFinalNewline": false
   },
@@ -64,5 +57,24 @@
   },
   "[html]": {
     "editor.wordWrap": "on",
-  }
+  },
+  "window.commandCenter": false,
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.rulers": [
+      120
+    ],
+    "editor.semanticHighlighting.enabled": true
+  },
+
+  "workbench.activityBar.location": "side",
+
+  "colorized_access_modifier.colorizeFullLine": true
 }
