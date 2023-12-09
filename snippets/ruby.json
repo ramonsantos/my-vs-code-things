@@ -114,11 +114,6 @@
     "body": "before_action :$1, only: [:$2]",
     "description": "before-action line"
   },
-  "expect": {
-    "prefix": "expect",
-    "body": "expect($1).to eq($2)",
-    "description": "expect line"
-  },
   "render-json": {
     "prefix": "render-json",
     "body": "render json: { ${1:entity}: ${2:content} }, status: :${3:accepted}",
@@ -263,6 +258,11 @@
     "body": "after { $1 }\n",
     "description": "RSpec 'after' inline"
   },
+  "context": {
+    "prefix": "context",
+    "body": "context 'when $1' do\r\n\t$2\r\nend\r\n",
+    "description": "RSpec 'Context' block"
+  },
   "describe": {
     "prefix": "describe",
     "body": "describe '${1:}' do\r\n\t$2\r\nend\r\n",
@@ -273,11 +273,19 @@
     "body": "described_class",
     "description": "described_class"
   },
-  "context": {
-    "prefix": "context",
-    "body": "context 'when $1' do\r\n\t$2\r\nend\r\n",
-    "description": "RSpec 'Context' block"
+  "expect": {
+    "prefix": "expect",
+    "body": "expect($1).to eq($2)",
+    "description": "expect line"
   },
+
+
+  "expect_block_change": {
+    "prefix": "expect block change",
+    "body": "expect do\r\n\t$1\r\nend.to change { $2 }.from($3).to($4)",
+    "description": "expect block change"
+  },
+
   "have_http_status": {
     "prefix": "have_http_status",
     "body": "have_http_status(${1:200})",
