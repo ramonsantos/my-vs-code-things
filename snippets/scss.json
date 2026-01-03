@@ -1,7 +1,7 @@
 {
-	"import": {
-		"prefix": "import",
-		"body": "@import \"$1\";\n",
-		"description": "import"
-	}
+  "import": {
+    "prefix": "import",
+    "body": "@import \"$1\";\n",
+    "description": "import"
+  }
 }

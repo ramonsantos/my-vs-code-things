@@ -1,25 +1,25 @@
 {
-	// Elixir
-	"anonymous-functions": {
-		"prefix": "fn",
-		"body": "fn $1 -> $2 end",
-		"description": "anonymous functions"
-	},
-	"puts": {
-		"prefix": "puts",
-		"body": "IO.puts \"$1\"",
-		"description": "puts line"
-	},
-	"pry": {
-		"prefix": "bin",
-		"body": "\nrequire IEx; IEx.pry\n",
-		"description": "pry line"
-	},
+  // Elixir
+  "anonymous-functions": {
+    "prefix": "fn",
+    "body": "fn $1 -> $2 end",
+    "description": "anonymous functions"
+  },
+  "puts": {
+    "prefix": "puts",
+    "body": "IO.puts \"$1\"",
+    "description": "puts line"
+  },
+  "pry": {
+    "prefix": "bin",
+    "body": "\nrequire IEx; IEx.pry\n",
+    "description": "pry line"
+  },
 
-	// Test
-	"describe": {
-		"prefix": "describe",
-		"body": "describe \"${1:a specification}\" do\n\t$2\nend",
-		"description": "describe block"
-	}
+  // Test
+  "describe": {
+    "prefix": "describe",
+    "body": "describe \"${1:a specification}\" do\n\t$2\nend",
+    "description": "describe block"
+  }
 }

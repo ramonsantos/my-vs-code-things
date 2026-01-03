@@ -25,6 +25,15 @@
     "body": "case ${1:cond}\nwhen ${2:a}\n\t\t${3:body_a}\nwhen ${4:b}\n\t\t${5:body_b}\nelse\n\t\t${6:body_else}\nend",
     "description": "case-when block"
   },
+  "class_module_definition": {
+    "prefix": "rbdef",
+    "body": [
+      "${1|class,module|} ${2:MyName}",
+      "  $0",
+      "${1/(.*)/end/}"
+    ],
+    "description": "Create a Ruby class or module"
+  },
   "each-block": {
     "prefix": ".each-block",
     "body": ".each do |${1:obj}|\n\t$2\nend",
@@ -75,7 +84,6 @@
     "body": ".tap do |${1:hash}|\n\t$2\nend",
     "description": "generic tap method block"
   },
-
   // Simple methods
   "blank-method": {
     "prefix": "blank?",
@@ -107,12 +115,21 @@
     "body": "present?",
     "description": "present? method"
   },
-
   // Ruby on Rails
   "before-action": {
     "prefix": "before-action",
     "body": "before_action :$1, only: [:$2]",
     "description": "before-action line"
+  },
+  "params-permit": {
+    "prefix": "params-permit",
+    "body": "params.permit($1)",
+    "description": "params-permit"
+  },
+  "params-require": {
+    "prefix": "params-require",
+    "body": "params.require($1)",
+    "description": "params-require"
   },
   "render-json": {
     "prefix": "render-json",
@@ -189,7 +206,6 @@
     "body": ":unprocessable_entity",
     "description": "422 HTTP status symbol"
   },
-
   // Debugging
   "binding-pry": {
     "prefix": "binding-pry",
@@ -206,8 +222,12 @@
     "body": "\r\ndebugger\r\n",
     "description": "Debugger line"
   },
-
   // RSpec
+  "allow": {
+    "prefix": "allow",
+    "body": "allow($1).to receive($2).and_return($3)",
+    "description": "Rspec allow"
+  },
   "be_empty": {
     "prefix": "be_empty",
     "body": "be_empty",
@@ -278,14 +298,16 @@
     "body": "expect($1).to eq($2)",
     "description": "expect line"
   },
-
-
   "expect_block_change": {
     "prefix": "expect block change",
     "body": "expect do\r\n\t$1\r\nend.to change { $2 }.from($3).to($4)",
     "description": "expect block change"
   },
-
+  "expect_have_received": {
+    "prefix": "expect_have_received",
+    "body": "expect($1).to have_received($2).with($3)",
+    "description": "Rspec expect 'have_received'"
+  },
   "have_http_status": {
     "prefix": "have_http_status",
     "body": "have_http_status(${1:200})",
@@ -316,9 +338,20 @@
     "body": "scenario '${1:scenario}' do\r\n\t$2\r\nend",
     "description": "RSpec 'scenario' block"
   },
+  "subject-block": {
+    "prefix": "sub",
+    "body": "subject(:${1:var}) { $2 } ",
+    "description": "Subject block"
+  },
   "xit": {
     "prefix": "xit",
     "body": "xit '${1:should}' do\r\n\t$2\r\nend",
     "description": "RSpec 'xit' block"
+  },
+  // MongoDB
+  "object-id": {
+    "prefix": "object-id",
+    "body": "BSON::ObjectId.new.to_s",
+    "description": "Mongo ObjectId"
   }
 }
